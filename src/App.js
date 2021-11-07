@@ -8,6 +8,7 @@ import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
+import Modal from './components/Modal';
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route path="/cart" component={Cart} />
       <Route component={Default} />
     </Switch>
+    {/* we won't do any routing to the modal, we will display it as an overlay */}
+    <Modal />
     </React.Fragment>
   );
 }
